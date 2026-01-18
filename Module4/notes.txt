@@ -1,0 +1,20 @@
+DataType:
+
+String - sentence, word, character
+Integer - whole number eg 1,2,3,4,5
+Float - 1.8, 2.9, 7.1
+Boolean - True and False
+
+Objects:
+ListDictionary
+Set/Tuple
+
+STDIN and STNOUT
+standard inp/out
+
+Differnt File Modes to open
+r - read
+w - write
+ 
+PYPI Modules
+ Faker
