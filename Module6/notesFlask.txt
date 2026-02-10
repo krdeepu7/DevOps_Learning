@@ -1,0 +1,7 @@
+4 Main types of DB
+Relational database 
+NoSQL
+Graph
+key value
+
+Blob Storage
