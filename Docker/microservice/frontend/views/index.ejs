@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend</title>
+</head>
+<body>
+    <h1>Data from Backend in Frontend Microservice</h1>
+
+    <ul>
+        <% data.forEach(function(item) { %>
+            <li><%= JSON.stringify(item) %></li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>

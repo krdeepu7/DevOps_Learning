@@ -1,0 +1,27 @@
+services:
+  backend:
+    build: ./backend
+    hostname: backend-host
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - micro-network
+
+  frontend:
+    build: ./frontend
+    hostname: frontend-host
+    volumes:
+      - ./frontend:/app
+    environment:
+      - BACKEND_URL=http://backend:8000/api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - micro-network
+
+networks:
+  micro-network:

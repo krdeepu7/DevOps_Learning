@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management</title>
+</head>
+
+<body>
+
+    <h2>Student Management System</h2>
+
+    <form method="POST" action="/add">
+
+        <input name="name" placeholder="Student Name">
+
+        <input name="course" placeholder="Course">
+
+        <button>Add Student</button>
+
+    </form>
+
+    <hr>
+
+    <h3>Students</h3>
+
+    <ul>
+
+        {% for student in students %}
+
+        <li>
+
+            {{student.id}} -
+            {{student.name}} -
+            {{student.course}}
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+</body>
+
+</html>

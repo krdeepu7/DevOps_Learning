@@ -1,0 +1,1 @@
+console.log("Hello FROM NODEJS in DOCKER")
